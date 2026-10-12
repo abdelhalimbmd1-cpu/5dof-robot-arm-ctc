@@ -198,7 +198,8 @@ In this benchmark, both controllers were evaluated across $0.0\text{ kg}$, $0.5\
 ├── pick_and_place_results.mat          # Pick-and-place time-series trajectory dataset
 │
 ├── pick_and_place_animation.gif        # Animated 3D demonstration
-├── pick_and_place_simulation.mp4       # Video demonstration
+├── pick_and_place_simulation.mp4       # Video demonstration with trajectory trail & HUD
+├── record_mechanics_explorer_video.m   # 1-click video recorder for Simscape Mechanics Explorer
 │
 └── [CAD Assets]
     ├── 5Dof Robot Manipulator.SLDASM   # SolidWorks assembly
@@ -255,10 +256,18 @@ In this benchmark, both controllers were evaluated across $0.0\text{ kg}$, $0.5\
    ```
    This simulates the robot picking an object at Station A, transporting it along a 3D arc, and placing it at Station B.
 
-5. **Generate Video & GIF Animation:**
+5. **Generate Video & GIF Animation (Trajectory Trail & Analysis):**
    ```matlab
    create_simulation_video
    ```
+
+6. **Record Studio-Quality 3D CAD Video from Simscape Mechanics Explorer:**
+   ```matlab
+   record_mechanics_explorer_video
+   ```
+   Or directly from the **Mechanics Explorer** window:
+   - Click **Tools** $\rightarrow$ **Video Creator** (or the green filmstrip / movie slate 🎥 icon under **APPS**).
+   - Set Format to **MPEG-4**, Frame Size to **Custom [2400 1350]** (or 1920 $\times$ 1080), and click **Create Video**.
 
 ---
 
