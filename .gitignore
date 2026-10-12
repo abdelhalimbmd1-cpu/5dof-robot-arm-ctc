@@ -1,0 +1,16 @@
+# MATLAB / Simulink
+slprj/
+*.slxc
+*.autosave
+*.asv
+*.m~
+*.mat~
+*.tmp
+
+# SolidWorks lock files
+~$*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
